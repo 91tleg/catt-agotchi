@@ -3,9 +3,9 @@
 
 typedef struct
 {
-    uint8_t hunger;
-    uint8_t fein;
-    uint8_t unwellness;
+    uint8_t fullness;
+    uint8_t happiness;
+    uint8_t wellness;
 } catt_t;
 
 void catt_init( catt_t * catt );
