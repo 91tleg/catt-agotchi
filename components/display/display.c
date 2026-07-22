@@ -10,6 +10,13 @@ static TFT_t dev;
 
 #define BABY_PINK rgb565( 0xFD , 0xD3 , 0xE4 )
 #define FUSCHIA   rgb565( 0xFF , 0x00 , 0xFF )
+#define VIOLET    rgb565( 0x7F , 0x00 , 0xFF )
+#define LAVENDER  rgb565( 0xDF , 0xC5 , 0xFE )
+
+uint16_t backgroundColor = LAVENDER;
+uint16_t textColor       = VIOLET;
+uint16_t statusbarColor  = FUSCHIA;
+uint16_t fillerColor     = BABY_PINK;
 
 void display_init( display_pins_t pins )
 {
@@ -19,6 +26,6 @@ void display_init( display_pins_t pins )
 
 void display_render( catt_t * catt , display_icon_t icon )
 {
-    lcdFillScreen( &dev , BABY_PINK );
+    lcdFillScreen( &dev , backgroundColor );
     // ...
 }
