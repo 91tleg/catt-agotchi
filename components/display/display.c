@@ -13,10 +13,10 @@ static TFT_t dev;
 #define VIOLET    rgb565( 0x7F , 0x00 , 0xFF )
 #define LAVENDER  rgb565( 0xDF , 0xC5 , 0xFE )
 
-uint16_t backgroundColor = LAVENDER;
-uint16_t textColor       = VIOLET;
-uint16_t statusbarColor  = FUSCHIA;
-uint16_t fillerColor     = BABY_PINK;
+static const uint16_t backgroundColor = LAVENDER;
+static const uint16_t textColor       = VIOLET;
+static const uint16_t statusbarColor  = FUSCHIA;
+static const uint16_t fillerColor     = BABY_PINK;
 
 void display_init( display_pins_t pins )
 {
