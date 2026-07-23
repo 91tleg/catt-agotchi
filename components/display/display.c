@@ -29,3 +29,28 @@ void display_render( catt_t * catt , display_icon_t icon )
     lcdFillScreen( &dev , backgroundColor );
     // ...
 }
+
+static void draw_icons( display_icon_t highlighted )
+{
+    //...
+}
+
+static void draw_catt( catt_t * catt )
+{
+    //...
+}
+
+static void draw_statusbar()
+{
+    //...
+}
+
+static void draw_stats()
+{
+    //...
+}
+
+static void draw_dead_catt()
+{
+    //...
+}
